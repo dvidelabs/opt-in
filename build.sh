@@ -70,9 +70,11 @@ function update_archive {
     rm $1.updating
 }
 
-
-echo "updateing archive in $(basename $README)"
-update_archive $README $ARCHIVE
+# Github gets confused, so it has been disabled in README
+# you can use the logic to update own projects if needed
+# so leaving this here.
+#echo "updating archive in $(basename $README)"
+#update_archive $README $ARCHIVE
 
 exit
 
