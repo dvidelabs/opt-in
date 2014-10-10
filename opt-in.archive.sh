@@ -1,31 +1,31 @@
 # ------------------------ begin opt-in archive ------------------------
 # opt-in option pre-parser library, (c) 2014, Mikkel Fahnøe Jørgensen
-# Version: v0.1.0, License: MIT
+# Version: v0.1.1, License: MIT
 # ----------------------------------------------------------------------
 read -d '' OPTINARCHIVE << ENDOFOPTINARCHIVE
-H4sIAAAAAAAAA41Xy27jNhTdz1dwOGpUBxBsOTsJ6rSLoigKdIp2ds1AkG1KIWxTjii5ST36
-916+SUnBNJuI5OW5577pemD7nrYMle2lLw+7Bt3Q3ygyq5KwanciB5QwgjboC7q7Q2T/1CJ8
-ILuhyVD0I85RR/qhY2iTo/FdHQASvgdA+XmhrClw/BjHcEPuPF8LHN3S9foxXkdWZvSP4+im
-v0dxbQp/GfiTwRfcsdgADMXrHYK/uu3UOc3RoXWssNJIjbaqa7igYxejU42wuMsIEEATBtfq
-NBCfgtopc48gjlIAGBgnvdb/ciH7Ptg6U86BeGCi2B846cq6oifQ0ZGKt6xQcKw6E/jcwueZ
-g2OjB22wDM8Pd1tQCwcoEoIgRF5oj9IZvtYbWKD3SoXnmSmilSXaL1oK1nLZ6/U4ah4mizg9
-EdajhDybBHqU5+IvtBBriERqwyZEyluwJF3Xdpm4JNirbUjNCkn5DC0mSI9uUh2tgVHCpqBf
-ctQ/EWbZkqohnZ/tLrfUWYlDEwL3KE+0R8KklK2LUFqh8b6je1iQuhpOfQnkgzyoqed+daN/
-vZASUjvFYXaJHNC2PWCPtWH1gGdhpwwO6cGEfdcdi9TTJ9yGaYaMmHI5NgmgzNSHIw4N/1b0
-3w6/BkycNt+fJvwhp2nUxYXj1fYcYcfxmqEjeUU2q1JpiMP+cF+McxRiUXRMdLU5YALAKo8U
-tuemFHveVDJF6KWglchoBaQBOsRc4J1tF2hfmxCnMUANvRI2g9suIPAQgRsEPtQ1fVn0YLRE
-pQ5w6gzVp6oJnTS9soMed5QjaKFUg3JUovpQdCtx6ldQkIaQ4H4Oavj0DVC757Vvr06mpFnL
-4B+wdhZ4dySuEplMhTAdQsxLy4OeDOsy/4ZblrqQKravX32ii57vCB/OxG8IG98AdVzObScv
-vbkkVerx9OmPz+XnT7/9/HsxKQbZysR8RbxFdQUFHdmR67sMS2SV58hCyC4+C6nu4e4ZQk6c
-GDfa50kqm+rUgIY4/tCFJF2n6r2vzA2F70Uk/p1HAvw8GSQ651aKogT+5wl6ognlzWr+kNyP
-2KSnKEz0vhAC27UnlKVZOq5HObcO7dJY2bfnHWViTshqiyN7N4bWCettjIMGLP3sE8k2qrGo
-EsaRDaUJj/JT4l/Zmqmvig47rRgVBYqTWFnmQqHeUyIgHgl3axYn+d6ESLnnDexmKkGK2Mv5
-eGnaURtk9c6zpqiU9Z+c8O2yVdfBm2834Zuf/vzlL31fTTtbOTIHgsFqhmYRf4wNBTNe4ix2
-+W8e3sXm7WesLExjX4nAMveqtcHYV5y4bZECiuQqYJzmUDSC7SpkrpSrp0pwtIELrKX8dTWx
-HOiJSK3mlhg044L71cQnOqGomMeAY/xi5cxGKCcxQcYlhnsnJtQlgHs5gKOgl7HetB74DQDW
-82pvX/mTOUZZdVJDabnmZ2PHpEXwg+K7j6NujL9CVyTABYkUShIUGfmgAZrNzDuX6F42Ctwg
-PWVCBzvP12CpApV7OzJeJkr5VIMMd6jCvlH9TeFcejoEm5eZFIj4GnRCexJQcP/7p5IrQdme
-RNz+AyMXknzPDgAA
+H4sIAAAAAAAAA41XW2/bNhR+769gWS2aCwi2nDcJWruHYRgGrEXXt6YQZJtSCNuUI0pe0lT/
+fYd3UlLQ5iUiefid79zpemD7nrYMle2lLw+7Bj2jLygyq5KwanciB5QwgjboK7q5QWR/3yJ8
+ILuhyVD0HueoI/3QMbTJ0fiqDgAJ3wOg/LxQ1hQ4votjuCF3Hq4Fjp7T9fouXkdWZvSP4+hZ
+f4/i2hT+MvB7gy+4Y7EBGIrXKwR/ddupc5qjQ+tYYaWRGm1V13BBxy5GpxphcZcRIIAmDK7V
+aSA+BbVT5h5BHKUAMDBOeq3/8UL2fbB1ppwD8cBEsT9w0pV1RU+goyMVb1mh4Fh1JvC5hc8z
+B8dGt9pgGZ7fbragFg5QJARBiDzSHqUzfK03sEDvlQrPM1NEK0u0X7QUrOWy1+tx1DxMFnF6
+IqxHCXkwCXQnz8VfaCHWEInUhk2IlLdgSbqu7TJxSbBX25CaFZLyGVpMkB49S3W0BkYJm4J+
+zVF/T5hlS6qGdH62u9xSZyUOTQjcozzRHgmTUrYuQmmFxvuO7mFB6mo49SWQD/Kgpp771Y3+
+6UJKSO0Uh9klckDbdos91obVLZ6FnTI4pAcT9l13LFJPn3AbphkyYsrl2CSAMlMfjjg0/EfR
+fzn8GjBx2nx/mvCHnKZRFxeOV9tzhB3Ha4aO5AnZrEqlIQ77zdtinKMQi6JjoqvNARMAVnmk
+sD03pdjzppIpQi8FrURGKyAN0CHmAu9su0D72oQ4jQFq6JWwGdx2AYGHCNwg8KGu6eOiB6Ml
+KnWAU2eoPlVN6KTplR30uKMcQQulGpSjEtWHoluJU7+CgjSEBPdzUMOnL4DaPa99e3UyJc1a
+Bv+AtbPAuyNxlchkKoTpEGJeWh70ZFiX+Q/cstSFVLF9/+4TXfR8R/hwJn5D2PgGqONybjt5
+7M0lqVKPpw8fP5efP/z9xz/FpBhkKxPzFfEW1RUUdGRHru8yLJFVniMLIbv4LKS6h7tnCDlx
+YtxonyepbKpTAxri+EMX0vSlHtntNlkKHa4oEE6wSZ7XPgU7KiTBX0WMvs1jBBGYjBidjStN
+Xt7+7x7apdS8xeh1IRhs16bQgF2WApv1KMfWoV2aKvv2vKNMjAlZbHFk78bQOWG9jXHQf6Wb
+sa9jo/qKqmAc2Uia6Cg3Jf6VrRn6quaw0ypdFyexcp2LhHpOiXh4JNytWZjkcxMC5V43sJup
+/ChiL+Xj+V3KqI2xeuZZU1TG+i9O+HbJqsvgxaeb8M3vn/78V99Xw84Wjgx0MFfNzCzid7Gh
+YKZLnMUu/c27u9i8/IqVdWnsKxFY5h61Nhj7ihO3LVJAkVwFjNMcakawXYXMlXL1UgmONnCB
+tZQ/rSaWAz0RqdXcEoNmXPB2NfGJTigqxjHgGL9YObMRyklMkHGJ4Z6JCXUJ4B4O4ChoZaw3
+nQd+AoD1vNrbR/5kjFFWndRMWi7s2dQxaRH8nvjl3aj74l/QFAlwQSKFkgRFRj7of2Yz884l
+upeNAjdIT5nQwc7DNViqQOXejoyXiVI+1SDDHaqwT1R/UziXng7B5mUmBSK+Bp3QngQU3E//
+UnIlKNuTiNv/otyFus4OAAA=
 ENDOFOPTINARCHIVE
 . <(echo $OPTINARCHIVE | base64 -D | gunzip); unset OPTINARCHIVE;
 # ------------------------- end opt-in archive -------------------------

@@ -1,6 +1,6 @@
 # ----------------------------------------------------------------------
 # opt-in core option parser library, (c) 2014, Mikkel Fahnøe Jørgensen
-# Version: v0.1.0, License: MIT
+# Version: v0.1.1, License: MIT
 # ----------------------------------------------------------------------
 function _opt_dbg { [ $_opt_dbg_enabled -ne 0 ] && echo "debug: $@"; return 0; }
 function _opt_esc { _opt_ping="'\''"; _opt_qv="${1//\'/$_opt_ping}"; _opt_qv="'${_opt_qv}'"; }
@@ -38,9 +38,9 @@ function opt_resume { _opt_brk=0; _opt_dbg _resume_; }
 function opt_next { _opt_token="$1"; OPT_TOKEN="$1";
     _opt_dbg "args so far: $_opt_args"; _opt_dbg "next token: $1";
     if [ $_opt_brk -eq 0 ]; then return 0; else opt_pos; return 1; fi; }
-function opt_get { _opt_tail="$1"
-    if [ ! $_opt_brk -ne 0 ] && ( [ -z "$_opt_expect" ] || [ $_opt_eager -eq 0 ] ); then
-    while [ -n "${_opt_tail#-*}" ] && [ "$2" != "${2/${_opt_tail:1:1}/}" ]; do
+function opt_get { _opt_tail="$1"; if [ "${1:0:1}" == "-" ] && [ ! $_opt_brk -ne 0 ] &&
+    ( [ -z "$_opt_expect" ] || [ $_opt_eager -eq 0 ] ); then 
+    while [ "$2" != "${2/${_opt_tail:1:1}/}" ]; do
         _opt_dbg "_combine_: flag '$_opt_tail' in '$2'"
         opt_next "${_opt_tail:0:2}"; opt_f "$OPT_TOKEN"; _opt_tail="-${_opt_tail:2}";
         [ "$_opt_tail" == '-' ] && return 1; done; fi; opt_next "$_opt_tail"; }
