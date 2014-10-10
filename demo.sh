@@ -3,7 +3,7 @@
 source $(dirname $0)/opt-in.core.sh
 source $(dirname $0)/opt-in.extension.sh
 
-opt_init 'missing=<missing>'
+opt_init 'missing=<missing>' debug silent
 for arg
 do
     if opt_get "$arg" "hxci"; then 

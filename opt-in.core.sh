@@ -143,9 +143,9 @@ function opt_next { _opt_token="$1"; OPT_TOKEN="$1";
 #
 # NOTE: be careful not to have '-' or other non-letter symbol in
 # the flags argument, it can give quite unexpected results.
-function opt_get { _opt_tail="$1"
-    if [ ! $_opt_brk -ne 0 ] && ( [ -z "$_opt_expect" ] || [ $_opt_eager -eq 0 ] ); then
-    while [ -n "${_opt_tail#-*}" ] && [ "$2" != "${2/${_opt_tail:1:1}/}" ]; do
+function opt_get { _opt_tail="$1"; if [ "${1:0:1}" == "-" ] && [ ! $_opt_brk -ne 0 ] &&
+    ( [ -z "$_opt_expect" ] || [ $_opt_eager -eq 0 ] ); then 
+    while [ "$2" != "${2/${_opt_tail:1:1}/}" ]; do
         _opt_dbg "_combine_: flag '$_opt_tail' in '$2'"
         opt_next "${_opt_tail:0:2}"; opt_f "$OPT_TOKEN"; _opt_tail="-${_opt_tail:2}";
         [ "$_opt_tail" == '-' ] && return 1; done; fi; opt_next "$_opt_tail"; }
