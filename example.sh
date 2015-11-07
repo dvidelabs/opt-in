@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env bash
 #
 # opt_in example
 

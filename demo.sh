@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env bash
 
 source $(dirname $0)/opt-in.core.sh
 source $(dirname $0)/opt-in.extension.sh

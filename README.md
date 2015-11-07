@@ -27,7 +27,6 @@ customization. This document mostly focus on the core library, and
 the extension is mostly self-explaining.
 
 
-
 ## Quick Start with Extension Example
 
 We primarily focus on the core library in this document, but here we
@@ -44,7 +43,7 @@ The following is found in the `demo.sh` file:
 
 
 
-    #! /bin/sh
+    #!/usr/bin/env bash
 
     source $(dirname $0)/opt-in.core.sh
     source $(dirname $0)/opt-in.extension.sh
@@ -105,15 +104,26 @@ Note: all files are pre-built and checked in. You only need to build if
 you change files and depend on the build products.
 
 The library is supposed to be portable but has only been tested in Bash
-in `#! /bin/sh` mode.  It is not so extreme as to use `[ X"$myvar" ==
-X"0" ]` for ultimate old-school shells. It does use constructs like `[
--z "$myvar" ]` or `[ $myvar -eq 0 ]`, but it does not use regular
-expressions nor patterns that require a Bash compatible shell.
+in `#! /bin/sh` mode. It is recommended to use `#!/usr/bin/env bash`.
 
 If you can tolerate the dependency on `gunzip` and `base64`, and you
 have the ability to use the `source <(command)` shell construct (like
 Bash on OS-X or Linux core distribution), you can also embed the core
 library as a self-extracting archive. See `opt-in.archive.sh`.
+
+
+## Known Posix Issues
+
+- Substring parsing syntax like `${1:0:2}` is not very elegant in Posix
+shells, so in its current state, the parser will require a bash
+compatible shell.
+
+- The `function myfunction { ... }` syntax should be `myfunction() { ...
+  }`, but will work with bash shells.
+
+- `==` should be `=` and string comparisons should add a suffix to
+avoid empty string arguments to `test`, like `[ "$1"x = "-" ]` rather
+than `[ "$1" == "-" ]`.
 
 
 ## Motivation
